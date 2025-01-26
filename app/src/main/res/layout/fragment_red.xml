@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/red"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RedFragment">
+
+    <TextView
+        android:id="@+id/redFragmentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="red"
+        android:text="@string/red"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/stopRedFragmentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="red2"
+        android:text="@string/stop"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>

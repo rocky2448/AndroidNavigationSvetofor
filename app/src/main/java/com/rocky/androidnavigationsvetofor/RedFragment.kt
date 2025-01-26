@@ -7,19 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import androidx.transition.TransitionInflater
-import com.rocky.androidnavigationsvetofor.databinding.FragmentTwoBinding
+import com.rocky.androidnavigationsvetofor.databinding.FragmentRedBinding
 
 
-class TwoFragment : Fragment() {
+class RedFragment : Fragment() {
 
-    private var _binding: FragmentTwoBinding? = null
+    private var _binding: FragmentRedBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTwoBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentRedBinding.inflate(layoutInflater, container, false)
 
         return binding.root
     }
@@ -31,8 +31,8 @@ class TwoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val args: TwoFragmentArgs by navArgs()
+        val args: RedFragmentArgs by navArgs()
         val text = args.myArg
-        binding.textViewFragmentTwoTV.text = text
+        binding.redFragmentTV.text = text
     }
 }
